@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@300;500&display=swap');
 
-html{
+html {
     font-family: 'DM Sans', sans-serif;
     font-size: 62.5%;
 }
-:root{
+
+:root {
     /* font */
     --Inter: 'Inter', sans-serif;
     /* color */
@@ -17,42 +18,43 @@ html{
 
 }
 
-main{
+main {
     width: 100%;
     min-width: 320px;
     text-align: center;
     display: grid;
     justify-items: center;
+    background-color: var(--Just-white);
 }
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-.title{
+.title {
     font-size: 2.4rem;
     line-height: 26px;
     font-weight: 700;
 }
 
-.subtitle{
+.subtitle {
     font-size: 1.4rem;
     line-height: 18px;
     font-weight: 500;
 }
 
-.subtitle--primary{
+.subtitle--primary {
     color: var(--Gray);
 }
 
-.subtitle--secondary{
+.subtitle--secondary {
     color: var(--Other-gray);
 }
 
 
-header{
+header {
     position: relative;
     display: grid;
     width: 100%;
@@ -63,14 +65,14 @@ header{
     justify-items: center;
 }
 
-.header__logo{
+.header__logo {
     display: flex;
     align-items: center;
     gap: 5px;
     color: var(--Bitcoin-orange);
 }
 
-.header__content{
+.header__content {
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
@@ -79,15 +81,15 @@ header{
     width: 80%;
 }
 
-.header__subtitle{
+.header__subtitle {
     color: var(--Soft-Orange);
 }
 
-.header__title{
+.header__title {
     color: var(--Just-white);
 }
 
-.header__nav{
+.header__nav {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -104,46 +106,57 @@ header{
     bottom: -20px;
 }
 
-.header__nav span{
+.header__nav span {
     background-image: url('../assets/mdi_keyboard_arrow_down.svg');
     background-position: center;
     background-size: cover;
     height: 14px;
     width: 24px;
 }
+
 /*-------------Exchange-rates-section------------------------*/
 
-.exchange-rate{
+.exchange-rate {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding: 65px 0;
     width: 80%;
-
 }
 
-.exchange-rate img{
+.exchange-rate img {
     width: 194px;
 }
 
-.exchange-rate__titles{
+.exchange-rate__titles {
     display: flex;
     flex-direction: column;
     gap: 26px;
     margin: 46px 0;
 }
 
-.card__table{
+.card__title {
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    color: var(--Bitcoin-orange);
+    font-weight: 700;
+}
+
+.card__table {
     width: 194px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: 38px;
     list-style: none;
     font-family: var(--Inter);
+    background-color: #FFFFFF;
     color: #B5B0AC;
+    border-radius: 8px;
 }
 
-.card__table li{
+
+
+.card__table li {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -154,16 +167,38 @@ header{
 .card__table li:nth-child(2n) {
     justify-content: center;
     font-size: 1.4rem;
-  }
+    padding: 0;
+}
 
-.card__table span{
+.card__table p {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card__table span {
     width: 14px;
     height: 14px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.card__table .trending_down{
+.card__table .trending_down {
     background-image: url('../assets/trending-down.svg');
 }
-.card__table .trending_up{
+
+.card__table .trending_up {
     background-image: url('../assets/trending-up.svg');
+}
+
+.exchange-rate__update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    width: 174px;
+    height: 32px;
+    background-color: var(--Soft-Orange);
+    border-radius: 8px;
+    font-size: 1.2rem;
 }
