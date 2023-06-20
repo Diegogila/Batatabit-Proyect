@@ -22,9 +22,7 @@ main {
     width: 100%;
     min-width: 320px;
     text-align: center;
-    display: grid;
-    justify-items: center;
-    background-color: var(--Just-white);
+
 }
 
 * {
@@ -33,10 +31,15 @@ main {
     padding: 0;
 }
 
-.title {
+.primary-title {
     font-size: 2.4rem;
     line-height: 26px;
     font-weight: 700;
+}
+
+.primary-title--white {
+
+    color: var(--Just-white);
 }
 
 .subtitle {
@@ -85,10 +88,6 @@ header {
     color: var(--Soft-Orange);
 }
 
-.header__title {
-    color: var(--Just-white);
-}
-
 .header__nav {
     position: absolute;
     display: flex;
@@ -115,8 +114,13 @@ header {
 }
 
 /*-------------Exchange-rates-section------------------------*/
+.exchange-rate{
+    display: grid;
+    place-items: center;
+    background-color: var(--Just-white);
+}
 
-.exchange-rate {
+.exchange-rate__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +128,7 @@ header {
     width: 80%;
 }
 
-.exchange-rate img {
+.exchange-rate__container img {
     width: 194px;
 }
 
@@ -201,4 +205,13 @@ header {
     background-color: var(--Soft-Orange);
     border-radius: 8px;
     font-size: 1.2rem;
+}
+
+/*----------------------Attributes-------------------------*/
+
+.attributes{
+    display: grid;
+    place-items: center;
+    background-color: var(--Warm-black);
+    padding: 65px 0;
 }
