@@ -243,8 +243,8 @@ header {
 }
 
 .attributes__card{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: ;
     text-align: start;
     width: 100%;
     min-height: 152px;
