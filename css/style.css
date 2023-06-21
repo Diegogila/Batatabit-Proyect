@@ -239,14 +239,19 @@ header {
 .attributes__cards-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(288px, 1fr)); 
+    gap: 10px;
     margin: 32px 0;
 }
 
 .attributes__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
     text-align: start;
     width: 100%;
     height: 152px;
-    padding: 20px;
+    padding:20px;
     background-color: var(--Warm-back-1);
     border-radius: 4px;
     overflow: hidden;
@@ -254,8 +259,40 @@ header {
 }
 
 .attributes__card span{
+    display: block;
     width: 24px;
     height: 24px;
     background-size: cover;
     background-position: center;
+}
+#span-clock{
+    background-image: url("../assets/clock.svg");
+}
+
+#span-eye{
+    background-image: url("../assets/eye.svg");
+}
+
+#span-cash{
+    background-image: url("../assets/dollar-sign.svg");
+}
+
+#span-check{
+    background-image: url("../assets/check-circle.svg");
+}
+
+/*---------------Bitcoin baby------------------*/
+
+.bitcoin-baby{
+    position: relative;
+    width: 100%;
+    height: 386px;
+    background-image: url("../assets/bitcoinbaby1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.bitcoin-baby h1{
+    position: relative;
+    top: 60px;
 }
