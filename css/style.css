@@ -68,6 +68,26 @@ main {
     color: var(--Other-gray);
 }
 
+.span-icon{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.span-icon--medium{
+    width: 24px;
+    height: 24px;
+}
+
+.span-icon--small{
+    width: 14px;
+    height: 14px;
+}
+
+.span-icon--very-small{
+    width: 12px;
+    height: 12px;
+}
 
 header {
     position: relative;
@@ -188,18 +208,11 @@ header {
     gap: 15px;
 }
 
-.exchange-rate .card__table span {
-    width: 14px;
-    height: 14px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.exchange-rate .card__table .trending_down {
+#trending_down {
     background-image: url('../assets/trending-down.svg');
 }
 
-.exchange-rate .card__table .trending_up {
+#trending_up {
     background-image: url('../assets/trending-up.svg');
 }
 
@@ -258,13 +271,6 @@ header {
     text-overflow: ellipsis;
 }
 
-.attributes__card span{
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-size: cover;
-    background-position: center;
-}
 #span-clock{
     background-image: url("../assets/clock.svg");
 }
@@ -319,15 +325,48 @@ header {
     display: flex;
     flex-direction: column;
     justify-content:space-around;
+    align-items: center;
     width: 190px;
     height: 246px;
     background-color: var(--Just-white);
     border-radius: 8px;
 }
 
-.plan_card .card__button{
-    width: 118px;
-    height: 24px;
+.plan__card .card__title{
+    color: black;
+}
+
+.plan__card .card__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 134px;
+    height: 36px;
     border: 2px solid var(--Bitcoin-orange);
     border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    gap: 8px;
+    padding: 12px 16px;
+}
+
+.plan__card .card__price{
+    position: relative;
+    font-family: var(--Inter);
+    font-size: 5.2rem;
+    font-weight: 700;
+    letter-spacing: -4.16px;
+}
+
+.card__price span{
+    position: relative;
+    top: -30px;
+    font-family: var(--Inter);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+#right-arrow{
+    background-image: url("../assets/arrow-right.svg");
 }
